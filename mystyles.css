@@ -1,0 +1,212 @@
+/*General styling.*/
+body{
+	background-color: black;
+	color: Ivory;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 175px;
+	margin-left: 175px;
+	}
+h1{
+	text-align: center;
+	font-size: 36pt;
+	font-family: Impact, Charcoal, sans-serif;
+  }
+  h2{
+	font-size: 22pt;
+	font-family: Impact, Charcoal, sans-serif;
+  }
+/*Central image styling.*/
+div.div-img{
+	text-align: center;
+   }
+img.img-theatre{
+	display: block;
+	margin: 0 auto;
+	clear: both;
+	width: 384px;
+	height: 255px;
+	}
+/*Border image styling (one for right, one for left).*/
+div.div-left{
+	background-image: url("images/tessellate.jpg");
+	width: 155px;
+	height: 100%;
+	background-size: 100%;
+	background-repeat: repeat-y;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+		}
+div.div-right{
+	background-image: url("images/tessellate.jpg");
+	width: 155px;
+	height: 100%;
+	background-size: 100%;
+	background-repeat: repeat-y;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+		}
+/*Border image styling for seats page as the border did not extend past the screen when scrolling.*/
+div.div-left2{
+	background-image: url("images/tessellate.jpg");
+	width: 155px;
+	min-height: 18500px;
+	background-size: 100%;
+	background-repeat: repeat-y;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+		}
+div.div-right2{
+	background-image: url("images/tessellate.jpg");
+	width: 155px;
+	min-height: 18500px;
+	background-size: 100%;
+	background-repeat: repeat-y;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+		}
+/*Table styling*/
+table{
+	display: inline-block;
+	float: left;
+	color: Ivory;
+	border-radius: 10px;
+	}
+th.zoneHead{
+	font-size: 22pt;
+	font-family: Impact, Charcoal, sans-serif;
+	}
+td{
+	height: 30px;
+  }
+table, th, td{
+	border: 2px solid Ivory;
+	border-collapse: collapse;
+	text-align: center;
+	border-radius: 8px;
+	}
+/*Styling for error message box if booking fails for final page.*/
+div.div-err{
+	float: none;
+	clear: both;
+	position: relative;
+	background-color: rgb(153, 0, 0);
+	border: 2px solid Ivory;
+	border-radius: 8px;
+   }
+p.err{
+	margin-left: 10px;
+	}
+span{
+	font-weight: bold;
+	}
+/*Style for boxed information (used in email section of "seats" form and "book" order summary).*/
+p.inbox{
+	margin-left: 10px;
+	}
+div.div1{
+	margin-top: 10px;
+	float: none;
+	clear: both;
+	position: relative;
+	border: 2px solid Ivory;
+	border-radius: 8px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+   }
+/*Button styling.*/
+.click{
+	color: black;
+	background-color: Ivory;
+	font-family: Impact, Charcoal, sans-serif;
+	text-align: center;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 0 5px rgb(179, 179, 179)
+	}
+.click:hover{
+	color: Ivory;
+	background-color: rgb(255, 133, 51);
+	box-shadow: 0 5px rgb(179, 71, 0)
+	}
+.click:active{
+	color: Ivory;
+	background-color: rgb(255, 133, 51);
+	box-shadow: 0 2px rgb(128, 51, 0);
+	transform: translateY(3px);
+}
+/*Home page link styling*/
+a.home:link{
+	color: rgb(255, 133, 51);
+	}
+a.home:visited{
+	color: rgb(255, 133, 51);
+	}
+a.home:hover{
+	color: rgb(153, 0, 0);
+	}
+a.home:active{
+	color: rgb(153, 0, 0);
+	}
+/*Home page link for error page styling-this is on a red background so needed a different colour*/
+a.homeErr:link{
+	color: rgb(255, 133, 51);
+	}
+a.homeErr:visited{
+	color: rgb(255, 133, 51);
+	}
+a.homeErr:hover{
+	color: black;
+	}
+a.homeErr:active{
+	color: black;
+	}	
+/*Navbar styling. */
+#navbar {
+  overflow: hidden;
+  background-color: black;
+}
+#navbar a {
+  float: left;
+  display: block;
+  color: rgb(255, 133, 51);
+  font-family: Impact, Charcoal, sans-serif;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16pt;
+	}
+#navbar a:hover {
+  background-color: rgb(255, 133, 51);
+  color: Ivory;
+	}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 1000px;
+	}
+.sticky + .content {
+  padding-top: 60px;
+	}
+html {
+  scroll-behavior: smooth;
+}
+/*Create invisible anchor points with top offset to stop the nav bar scrolling too far. */
+a.navOffset{
+	display: block;
+    position: relative;
+    top: -55px;
+    visibility: hidden; 
+	}
